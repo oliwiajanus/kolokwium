@@ -1,0 +1,3 @@
+/home/cisco/kolokwium/CMakeFiles/rebuild_cache.dir
+/home/cisco/kolokwium/CMakeFiles/myProgram.dir
+/home/cisco/kolokwium/CMakeFiles/edit_cache.dir

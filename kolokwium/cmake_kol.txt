@@ -1,0 +1,17 @@
+cmake_minimum_required(VERSION 3.10)
+
+set(CMAKE_PREFIX_PATH "/tmp")
+
+project(myprogram)
+
+include_directories("include")
+file(GLOB SOURCE "src/main.c")
+
+add_library(lib STATIC "src/address.cpp src/employee.cpp)
+target_link_libraries(lib)
+
+add_executable(hello ${SOURCE})
+target_link_libraries(myprogram lib)
+install (TARGET lib DESTINATION /tmp/lib)
+install (TARGET myprogram DESTINATION ${CMAKE_PREFIX_PATH})
+
